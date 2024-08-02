@@ -17,5 +17,5 @@ Ensure you are in the root folder of the project before proceeding.
    pip3 install -r requirements.txt
 4. **Running the Backend Service**
    ```sh
-   uvicorn app:app --reload --host 0.0.0.0 --port 8000
+   uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
