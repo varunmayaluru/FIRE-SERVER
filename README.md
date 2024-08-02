@@ -19,3 +19,15 @@ Ensure you are in the root folder of the project before proceeding.
    ```sh
    uvicorn app:app --reload --host 0.0.0.0 --port 8000
 
+# Use Code Above or Code below
+
+# If You want to try Docker, using the steps below. 
+
+## Build and Run Docker Container
+
+1. **Build docker image**
+   ```sh
+   sudo docker build -t fire_calculator .
+2. **Run Container**
+   ```sh
+   sudo docker run -d -p 8000:8000 fire_calculator
