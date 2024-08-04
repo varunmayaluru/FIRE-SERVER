@@ -26,6 +26,10 @@ class FinancialInfo(BaseModel):
     annual_spending: float
     withdrawal_rate: float
 
+@app.get("/")
+def read_root():
+    return {"Welcome to the FIRE (FINANCIALLY INDEPENDENT RETIRE EARLY) Calculator!"}
+
 @app.post("/fire_calculator_financials")
 def calculate_financials(info: FinancialInfo):
     # Calculate annual savings
